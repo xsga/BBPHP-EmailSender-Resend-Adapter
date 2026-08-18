@@ -31,7 +31,7 @@ final class ResendEmailService implements SendEmailService
                 'html'    => $emailData->body,
             ]);
 
-            if ($result->statusCode !== 200) {
+            if (isset($result->statusCode) && $result->statusCode !== 200) {
                 $this->logger->error('Failed to send email using Resend service', [
                     'event' => 'email.resend.send.error',
                     'status_code' => $result->statusCode ?? 'unknown',
