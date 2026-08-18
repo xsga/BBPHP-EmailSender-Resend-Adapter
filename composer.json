@@ -1,5 +1,5 @@
 {
-  "name": "xsga/bbphp-emailsender-sender-ad",
+  "name": "xsga/bbphp-emailsender-resend-adapter",
   "description": "A PHP email sender core library",
   "type": "project",
   "license": "MIT",
